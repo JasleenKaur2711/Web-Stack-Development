@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Booking Form
+        </title>
+    </head>
+    <body background="hotel_img12.jpg">
+        <style>
+            div{
+                margin-top:180px;
+                margin-left:550px;
+                background-color:rgba(245, 237, 237, 0.955);
+                height:400px;
+                width:440px;
+            }
+        </style>
+        <div align="center">
+            <h1><i>Booking Form</i></h1>
+            <form>
+                <label><b>First Name: </b></label>
+                <input type="text" id="fname" name="fname">
+                <br><br>
+
+                <label><b>Last Name: </b></label>
+                <input type="text" id="lname" name="lname">
+                <br><br>
+
+                <label><b>Gender: </b></label><br>
+                
+                <input type="radio" id="gender" name="gender" value="male">Male
+                
+                <input type="radio" id="gender" name="gender" value="female">Female
+                
+                <input type="radio" id="gender" name="gender" value="others">Others
+                <br><br>
+
+                <b>You want to book a: </b><br>
+                <input type="checkbox" id="singleroom" name="singleroom">Single Sharing Room
+                <br>
+                <input type="checkbox" id="doubleroom" name="doubleroom">Double Sharing Room
+                <br>
+                <input type="checkbox" id="triple" name="tripleroom">Triple Sharing Room
+                <br><br>
+                
+                <b>Booking Date:</b>
+                <input type="date" id="bookingdate" name="bookingdate">
+                <br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
+        
+    </body>
+</html>
