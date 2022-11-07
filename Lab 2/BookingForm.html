@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Booking Form
+        </title>
+    </head>
+    <body background="hotel_img12.jpg">
+        <style>
+            div{
+                margin-top:120px;
+                margin-left:550px;
+                background-color:rgba(245, 237, 237, 0.955);
+                height:580px;
+                width:450px;
+            }
+        </style>
+        <div align="center">
+            <h1><i>Booking Form</i></h1>
+            <form>
+                <label><b>First Name: </b></label>
+                <input type="text" id="fname" name="fname">
+                <br><br>
+
+                <label><b>Last Name: </b></label>
+                <input type="text" id="lname" name="lname">
+                <br><br>
+
+                <label><b>Email: </b></label>
+                <input type="email" id="email" name="email">
+                <br><br>
+
+                <label><b>Contact: </b></label>
+                <input type="tel" id="phone_num" name="phone_num" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                <br><br>
+                <label align="center"><b>Upload your ID proof: </b></label><br>
+                <input type="file" id="idproof" name="idproof" accept="image/png, image/jpeg">
+
+                <br><br>
+                <label><b>Gender: </b></label><br>
+                
+                <input type="radio" id="gender" name="gender" value="male">Male
+                
+                <input type="radio" id="gender" name="gender" value="female">Female
+                
+                <input type="radio" id="gender" name="gender" value="others">Others
+                <br><br>
+
+                <b>You want to book a: </b><br>
+                <input type="checkbox" id="singleroom" name="singleroom">Single Sharing Room
+                <br>
+                <input type="checkbox" id="doubleroom" name="doubleroom">Double Sharing Room
+                <br>
+                <input type="checkbox" id="triple" name="tripleroom">Triple Sharing Room
+                <br><br>
+                
+                <b>Booking Date:</b>
+                <input type="date" id="bookingdate" name="bookingdate">
+                <br><br>
+
+                <label><b>Choose check-in time:</b></label><br>
+                <input type="time" id="check-in" name="check-in" required>
+                <small><b>Check-in time is before 13:00</b></small>
+                
+                <br><br>
+                <input type="submit" value="SUBMIT">
+
+                
+                <input type="reset" value="RESET">
+
+            </form>
+
+        </div>
+
+        
+    </body>
+</html>
