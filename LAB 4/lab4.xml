@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" href="lab4.xsl"?>
+<hotel>
+    <about> <!--1st entity-->
+        <description>
+            The Hotel @ Tharabar Gate is located in the most unique Archeological Site of South East Asia, Old Bagan; the Ancient capital of the Burmese Empire. Surrounded by more than 4000 ancient temples and pagodas, you will be enchanted by its breathtaking views. The Hotel @ Tharabar Gate is within 5 minutes walking distance to the spectacular Ananda Temple known as ‘The Jewel of Bagan’.
+        </description>
+        <address>
+            Near Tharabar Gate (Old Bagan )
+            Nyaung Oo Township, Mandalay Division, Myanmar
+        </address>
+        <telephone>
+            09423656213
+        </telephone>
+        <email>
+            thetajhotels@gmail.com
+        </email>
+    </about>
+
+    <accomodation>  <!--2nd entity-->
+        <deluxe>
+            <description>
+                Nestle and surrounded by a tropical garden. The spacious and traditional appointed Deluxe Rooms (36m2) are nonsmoking and designed by using teakwood, marble and Bagan brick. Each room has high ceilings which give the room a large open feeling.
+            </description>
+            <amenities>
+                Bathtub or walk-in shower
+                Soap amenities
+                Hair dryer
+                Coffee  tea making facilities
+            </amenities>
+        </deluxe>
+        <suite>
+            <description>
+                Our One Bedroom Suites are designed in a resort style, providing the comfort and feel of a resort with teak wood furniture and chic white marble bathroom. A spacious private backyard terrace with views over the Pagodas.
+            </description>
+            <amenities>
+                Individually controlled air-conditioning
+                32 Inch flat screen TV
+                In-room safe
+                Complimentary bottled water
+                Private terrace with pagoda view
+            </amenities>
+        </suite>
+    </accomodation>
+    
+    <contact>       <!--3rd entity-->
+        <name>
+            The Taj Hotels
+        </name>
+        <email>
+            support.tajhotels@gmail.com
+        </email>
+        <telephone>
+            8546325412
+        </telephone>
+    </contact>
+
+    <customer>      <!--4th entity-->
+        <fname>
+            Jasleen
+        </fname>
+        <lname>
+            Kaur
+        </lname>
+        <email>
+            jasleen.27jsr@gmail.com
+        </email>
+        <number>
+            9563214523
+        </number>
+        <address>
+            Block: 2, Hosur Main Road, Bangalore
+        </address>
+        <roomtype>
+            Single Sharing
+        </roomtype>
+    </customer>
+
+    <customer>      <!--5th entity-->
+        <fname>
+            Priya
+        </fname>
+        <lname>
+            Kumari
+        </lname>
+        <email>
+            priyak45@gmail.com
+        </email>
+        <number>
+            9563214523
+        </number>
+        <address>
+            Block: 7, Hosur Main Road, Bangalore
+        </address>
+        <roomtype>
+            Double Sharing
+        </roomtype>
+    </customer>
+
+    <customer>      <!--6th entity-->
+        <fname>
+            Ayushya
+        </fname>
+        <lname>
+            Chongder
+        </lname>
+        <email>
+            chongderayushya@gmail.com
+        </email>
+        <number>
+            9563214523
+        </number>
+        <address>
+            Phase 5, BTM, Bangalore
+        </address>
+        <roomtype>
+            Triple Sharing
+        </roomtype>
+    </customer>
+
+    <customer>      <!--7th entity-->
+        <fname>
+            Tirthajoti
+        </fname>
+        <lname>
+            Sinha
+        </lname>
+        <email>
+            tirthooo@gmail.com
+        </email>
+        <number>
+            9563214523
+        </number>
+        <address>
+            HSR, Block 7, Bangalore
+        </address>
+        <roomtype>
+            Double Sharing
+        </roomtype>
+    </customer>
+
+    <customer>      <!--8th entity-->
+        <fname>
+            Sumit
+        </fname>
+        <lname>
+            Agarwal
+        </lname>
+        <email>
+            agarwalsumit@gmail.com
+        </email>
+        <number>
+            9563214523
+        </number>
+        <address>
+            Block: 2, Hosur Main Road, Bangalore
+        </address>
+        <roomtype>
+            Single Sharing
+        </roomtype>
+    </customer>
+
+</hotel>

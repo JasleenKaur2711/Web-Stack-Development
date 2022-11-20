@@ -1,0 +1,76 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="hotel">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="about">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="description">
+                <xs:annotation>
+                  <xs:documentation>1st entity</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element type="xs:string" name="address"/>
+              <xs:element type="xs:float" name="telephone"/>
+              <xs:element type="xs:string" name="email"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="accomodation">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="deluxe">
+                <xs:annotation>
+                  <xs:documentation>2nd entity</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="description"/>
+                    <xs:element type="xs:string" name="amenities"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="suite">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="description"/>
+                    <xs:element type="xs:string" name="amenities"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="contact">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="name">
+                <xs:annotation>
+                  <xs:documentation>3rd entity</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element type="xs:string" name="email"/>
+              <xs:element type="xs:float" name="telephone"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="customer" maxOccurs="unbounded" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="fname">
+                <xs:annotation>
+                  <xs:documentation>4th entity5th entity6th entity7th entity8th entity</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element type="xs:string" name="lname"/>
+              <xs:element type="xs:string" name="email"/>
+              <xs:element type="xs:float" name="number"/>
+              <xs:element type="xs:string" name="address"/>
+              <xs:element type="xs:string" name="roomtype"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
