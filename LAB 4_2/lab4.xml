@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" href="lab4.xsl"?>
+<hotel>
+
+    <customer>      <!--1st entity-->
+        <fname>
+            Jasleen
+        </fname>
+        <lname>
+            Kaur
+        </lname>
+        <email>
+            jasleen.27jsr@gmail.com
+        </email>
+        <number>
+            9563214523
+        </number>
+        <address>
+            Block: 2, Hosur Main Road, Bangalore
+        </address>
+        <roomtype>
+            Single Sharing
+        </roomtype>
+    </customer>
+
+    <customer>      <!--2nd entity-->
+        <fname>
+            Priya
+        </fname>
+        <lname>
+            Kumari
+        </lname>
+        <email>
+            priyak45@gmail.com
+        </email>
+        <number>
+            9563214523
+        </number>
+        <address>
+            Block: 7, Hosur Main Road, Bangalore
+        </address>
+        <roomtype>
+            Double Sharing
+        </roomtype>
+    </customer>
+
+    <customer>      <!--3rd entity-->
+        <fname>
+            Ayushya
+        </fname>
+        <lname>
+            Chongder
+        </lname>
+        <email>
+            chongderayushya@gmail.com
+        </email>
+        <number>
+            9563214523
+        </number>
+        <address>
+            Phase 5, BTM, Bangalore
+        </address>
+        <roomtype>
+            Triple Sharing
+        </roomtype>
+    </customer>
+
+    <customer>      <!--4th entity-->
+        <fname>
+            Tirthajoti
+        </fname>
+        <lname>
+            Sinha
+        </lname>
+        <email>
+            tirthooo@gmail.com
+        </email>
+        <number>
+            9563214523
+        </number>
+        <address>
+            HSR, Block 7, Bangalore
+        </address>
+        <roomtype>
+            Double Sharing
+        </roomtype>
+    </customer>
+
+    <customer>      <!--5th entity-->
+        <fname>
+            Sumit
+        </fname>
+        <lname>
+            Agarwal
+        </lname>
+        <email>
+            agarwalsumit@gmail.com
+        </email>
+        <number>
+            9563214523
+        </number>
+        <address>
+            Block: 2, Hosur Main Road, Bangalore
+        </address>
+        <roomtype>
+            Single Sharing
+        </roomtype>
+    </customer>
+
+</hotel>
