@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Booking Form
+        </title>
+        <script>
+            function validateForm() 
+            {
+              let x = document.forms["bookingform"]["fname"].value;
+              if (x == "") 
+              {
+                alert("Name must be filled out");
+                return false;
+              }
+              if (x<=65)
+              {
+                alert("Please Enter Only Characters");
+              }
+
+                let phone = document.forms["bookingform"]["phone_num"].value;
+                var phoneno = /^\d{10}$/;
+                if(phone.match(phoneno))
+                    {
+                return true;
+                    }
+                else
+                    {
+                    alert("Phone number must be 10 digits long.");
+                    return false;
+                    }
+            }
+        </script>
+       <script>
+        function onnumber(input)
+        {
+          var num=/[^0-9]/gi;
+          input.value=input.value.replace(num,"");
+        }
+        function ontext(input1)
+        {
+          var text = /[^a-zA-Z]+$/;
+          input1.value=input1.value.replace(text,"");
+        }
+      </script>
+    </head>
+    <body background="hotel_img12.jpg">
+        <style>
+            div{
+                margin-top:120px;
+                margin-left:550px;
+                background-color:rgba(245, 237, 237, 0.955);
+                height:580px;
+                width:450px;
+            }
+        </style>
+        <div align="center">
+            <h1><i>Booking Form</i></h1>
+            <form name="bookingform" onsubmit="return validateForm()" method="post" action="hotel_img1.jpg">
+                <label name="fname"><b>First Name:</b></label>
+                <input type="text" id="fname" name="fname" maxlength="10" required onkeyup="ontext(this)">
+                <br><br>
+
+                <label><b>Last Name:</b></label>
+                <input type="text" id="lname" name="lname" onkeyup="ontext(this)">
+                <br><br>
+
+                <label><b>Email:</b></label>
+                <input type="email" id="email" name="email">
+                <br><br>
+
+                <label name="phone_num"><b>Contact: </b></label>
+                <input type="tel" id="phone_num" name="phone_num"  required onkeyup="onnumber(this)">
+                <br><br>
+               
+                <label align="center"><b>Upload your ID proof: </b></label><br>
+                <input type="file" id="idproof" name="idproof" accept="image/png, image/jpeg">
+
+                <br><br>
+                <label><b>Gender: </b></label><br>
+                
+                <input type="radio" id="gender" name="gender" value="male">Male
+                
+                <input type="radio" id="gender" name="gender" value="female">Female
+                
+                <input type="radio" id="gender" name="gender" value="others">Others
+                <br><br>
+
+                <b>You want to book a: </b><br>
+                <input type="checkbox" id="singleroom" name="singleroom">Single Sharing Room
+                <br>
+                <input type="checkbox" id="doubleroom" name="doubleroom">Double Sharing Room
+                <br>
+                <input type="checkbox" id="triple" name="tripleroom">Triple Sharing Room
+                <br><br>
+                
+                <b>Booking Date:</b>
+                <input type="date" id="bookingdate" name="bookingdate">
+                <br><br>
+
+                <label><b>Choose check-in time:</b></label><br>
+                <input type="time" id="check-in" name="check-in" required>
+                <small><b>Check-in time is before 13:00</b></small>
+                
+                <br><br>
+                <input type="submit" value="SUBMIT">
+
+                
+                <input type="reset" value="RESET">
+
+            </form>
+
+        </div>
+
+        
+    </body>
+</html>
