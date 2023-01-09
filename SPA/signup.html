@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <br>
+    <div id="signup" class="container p-4 mt-5 pb-5"
+        style="background-color: white; border-radius: 25px; box-shadow: 10px 10px 2px 1px #888888;">
+        <form id="signupForm" onsubmit="return false">
+            <h2 class="text-center">Sign Up</h2> <br>
+            <div class="row">
+                <div class="offset-md-1 col-md-2 d-flex align-items-center">
+                    <label for="Name" class="form-label">Enter Your name</label>
+                </div>
+                <div class="col-md-8">
+                    <input type="text" class="form-control" name="" id="sName" ng-model="sName" aria-describedby="helpId"
+                        placeholder="John Doe" required>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="offset-md-1 col-md-2 d-flex align-items-center">
+                    <label for="Name" class="form-label">Enter Mail id</label>
+                </div>
+                <div class="col-md-8">
+                    <input type="email" class="form-control" name="" id="sMail" ng-model="sMail" aria-describedby="emailHelpId"
+                        placeholder="johndoe@mail.com" required>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="offset-md-1 col-md-2 d-flex align-items-center">
+                    <label for="Name" class="form-label">Enter Password</label>
+                </div>
+                <div class="col-md-8">
+                    <input type="password" class="form-control" name="" id="sPass" ng-model="sPass" placeholder="" aria-required="true">
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="offset-md-1 col-md-2 d-flex align-items-center">
+                    <label for="Name" class="form-label">Re enter Password</label>
+                </div>
+                <div class="col-md-8">
+                    <input type="password" class="form-control" name="" id="sCnfPass" ng-model="sCnfPass" placeholder="" aria-required="true">
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="offset-md-1 col-md-2 d-flex align-items-center">
+                    Enter Age
+                </div>
+                <div class="col-md-2">
+                    <input type="number" class="form-control" name="" id="sAge" ng-model="sAge" placeholder="" min="0" max="100"
+                        aria-required="true">
+                </div>
+                <div class="offset-md-2 col-md-2 d-flex align-items-center pt-3 pt-md-0">
+                    Enter gender
+                </div>
+                <div class="col-md-2">
+                    <select class="form-select form-select-lg" name="" id="sGender" ng-model="sGender" required style="font-size: inherit;">
+                        <option disabled selected>Select one</option>
+                        <option value="">Male</option>
+                        <option value="">Female</option>
+                        <option value="">Other</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="offset-md-1 col-md-4">
+                    <button type="reset" class="btn btn-danger" style="width: 100%;">Reset</button>
+                </div>
+                <div class=" offset-md-3 col-md-4 pt-4 pt-md-0">
+                    <button type="button" class="btn btn-success" style="width: 100%;" ng-click="clearForm()">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <br> <br> <br> 
+</body>
+</html>
